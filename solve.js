@@ -54,9 +54,15 @@ function uniqueSlug(slug, taken) {
   return out;
 }
 const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+const dateCache = new Map();
 function longDate(date) {
-  const [y, m, d] = date.split('-');
-  return `${Number(d)} ${MONTHS[Number(m) - 1]} ${y}`;
+  let r = dateCache.get(date);
+  if (r === undefined) {
+    const [y, m, d] = date.split('-');
+    r = `${Number(d)} ${MONTHS[Number(m) - 1]} ${y}`;
+    dateCache.set(date, r);
+  }
+  return r;
 }
 function isWs(c) {
   return (c >= 9 && c <= 13) || c === 32 || c === 160 || c === 0x1680 || (c >= 0x2000 && c <= 0x200a) || c === 0x2028 || c === 0x2029 || c === 0x202f || c === 0x205f || c === 0x3000 || c === 0xfeff;
