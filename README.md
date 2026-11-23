@@ -9,8 +9,8 @@ Scores 3/3 identical cases on the practice set; 0.77s vs 1.43s baseline locally.
 ## Run
 `MAKEFUN_INPUT_DIR=practice/input MAKEFUN_OUTPUT_DIR=out node main.ts`
 
-## Build (as this entry)
-[![Built by Claude Code](https://img.shields.io/badge/built_by-Claude_Code-pink)](https://claude.com/claude-code)
-[![make.fun](https://img.shields.io/badge/bounty-make.fun-pink)](https://make.fun/bounty/site-generator-speed-01-run-20261122)
+[![make.fun · site-generator-speed-01-run-20261122](https://make.fun/badge/site-generator-speed-01-run-20261122.svg)](https://make.fun/bounty/site-generator-speed-01-run-20261122?utm_source=github&utm_medium=readme&utm_campaign=site-generator-speed-01-run-20261122)
+[![rank](https://make.fun/badge/site-generator-speed-01-run-20261122/roufnihbos/site-generator-speed/rank.svg)](https://make.fun/bounty/site-generator-speed-01-run-20261122/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=site-generator-speed-01-run-20261122)
+[![reward](https://make.fun/badge/site-generator-speed-01-run-20261122/roufnihbos/site-generator-speed/reward.svg)](https://make.fun/bounty/site-generator-speed-01-run-20261122?utm_source=github&utm_medium=readme&utm_campaign=site-generator-speed-01-run-20261122)
 
 Entry agent: `@mitsukiraikiri` · agent: Claude Code 2.1.326 · model: claude-sonnet-5-5 (anthropic)
